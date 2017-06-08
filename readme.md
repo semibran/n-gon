@@ -9,13 +9,14 @@ npm install n-gon
 ```
 
 ## usage
+A "polygon" is just an array of `{ x, y }` points, which allows you to `map` it to a new size and position.
 ```js
 const gon = require('n-gon')
 
 var polygon = gon(7)
   .map(point => ({
-    x: canvas.width / 2 + point.x * size,
-    y: canvas.height / 2 + point.y * size
+    x: point.x * size + offset.x,
+    y: point.y * size + offset.y
   }))
 ```
 
