@@ -1,0 +1,18 @@
+{
+ "name": "n-gon",
+ "version": "0.1.0",
+ "description": "Create regular polygons with n sides",
+ "keywords": [
+  "n-gon",
+  "polygon",
+  "math",
+  "geometry"
+ ],
+ "main": "index.js",
+ "license": "MIT",
+ "author": "Brandon Semilla (https://github.com/semibran)",
+ "repository": {
+  "type": "git",
+  "url": "https://github.com/semibran/n-gon.git"
+ }
+}
