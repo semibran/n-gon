@@ -1,24 +1,26 @@
 # n-gon
-> Create regular polygons with `n` sides
+> create regular polygons with `n` sides
 
 ![stop sign](stop.png "hmmm")
 
-## install
-```sh
-npm install n-gon
-```
-
 ## usage
-A "polygon" is just an array of `{ x, y }` points, which allows you to `map` it to a new size and position.
+[![npm badge]][npm package]
+
+A "polygon" is just an array of `[ x, y ]` points, which allows you to `map` it to a new size and position.
 ```js
 const gon = require('n-gon')
 
-var polygon = gon(7)
-  .map(point => ({
-    x: point.x * size + offset.x,
-    y: point.y * size + offset.y
-  }))
+let polygon = gon(7)
+  .map([ x, y ] => [
+    x * size + offset[0],
+    y * size + offset[1]
+  ])
 ```
 
 ## license
-[MIT](https://opensource.org/licenses/MIT) © [Brandon Semilla](https://git.io/semibran)
+MIT © [Brandon Semilla][github profile]
+
+[npm badge]:      https://nodei.co/npm/n-gon.png?mini
+[npm package]:    https://www.npmjs.com/package/n-gon
+[github profile]: https://github.com/semibran
+
