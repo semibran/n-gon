@@ -6,21 +6,16 @@
 ## usage
 [![npm badge]][npm package]
 
-A "polygon" is just an array of `[ x, y ]` points, which allows you to `map` it to a new size and position.
+A "polygon" is just an array of `[ x, y ]` points, which allows you to map it to a new size and position.
 ```js
 const gon = require('n-gon')
 
 let polygon = gon(7)
-  .map([ x, y ] => [
+  .map(([ x, y ]) => [
     x * size + offset[0],
     y * size + offset[1]
   ])
 ```
 
-## license
-MIT © [Brandon Semilla][github profile]
-
 [npm badge]:      https://nodei.co/npm/n-gon.png?mini
 [npm package]:    https://www.npmjs.com/package/n-gon
-[github profile]: https://github.com/semibran
-
